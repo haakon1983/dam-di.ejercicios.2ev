@@ -1,21 +1,21 @@
 <template>
-  <div>
-    <CabeceraEjercicio>
-      EJERCICIO: 01
-      <template #descripcion>
-       🔶 Incluye una descripcion ejercicio 1.🔶
-      </template>
-    </CabeceraEjercicio>
+  <div id=""app>
+    <EJ02></EJ02>
   </div>
   
 </template>
 
 <script setup>
-import CabeceraEjercicio from './components/CabeceraEjercicio.vue';
+import EJ02 from './components/EJ02.vue';
 
 
 </script>
 
 <style scoped>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
 
 </style>

@@ -7,7 +7,7 @@
       </h1>
       <p class="descripcion-ejercicio">
         <slot name="descripcion">
-          Descripción del ejercicio.
+          🔶 Incluye una descripcion por favor. 🔶
         </slot>
       </p>
     </header>
