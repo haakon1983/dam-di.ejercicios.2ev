@@ -1,6 +1,6 @@
 <template>
   <div id=""app>
-    <EJ03></EJ03>
+    <Ej04></EJ04>
     
   </div>
   
@@ -9,6 +9,7 @@
 <script setup>
 
 import EJ03 from './components/EJ03.vue';
+import Ej04 from './components/Ej04.vue';
 
 
 

@@ -1,9 +1,10 @@
 <template>
     <div class="cabecera">
         <CabeceraEjercicio>
-            EJERCICIO:03
+            EJERCICIO:04
             <template #descripcion>
-                Uso de compionente con slots con información estática
+                Usamos slot debug.
+
             </template>
         </CabeceraEjercicio>
     </div>
@@ -11,16 +12,17 @@
         <button @click="disparar">
             🔫 Disparar: {{ disparador }}
         </button>
-        <ul>
+        
+    </div>
+    <Slotv1>
+        
+        <template #debug>
+            <ul>
             <li v-for="(evento, index) in debug" :key="index">
                 {{ index }} - {{ evento }}
             </li>
         </ul>
-    </div>
-    <Slotv1>
-        <template #cabecera> Cabecera inyectada</template>
-        <template #default>Cuerpo inyectado </template>
-        <template #pie>Pie inyectado</template>
+        </template>
     </Slotv1>
 
 </template>
@@ -43,15 +45,15 @@ const disparar = () => {
 
 //hooks de vida.
 onMounted(() => {
-    debug.value.push("MSG: EJ03.vue -> 🔥 (onMounted)");
+    debug.value.push("MSG: EJ04.vue -> 🔥 (onMounted)");
 });
 
 onUnmounted(() => {
-    debug.value.push("MSG: EJ03.vue -> 🔥 (onUnmonunted)");
+    debug.value.push("MSG: EJ04.vue -> 🔥 (onUnmonunted)");
 });
 
 onBeforeUpdate(() => {
-    debug.value.push("MSG: EJ03.vue -> 🔥 (onBeforeUpdate)");
+    debug.value.push("MSG: EJ04.vue -> 🔥 (onBeforeUpdate)");
 });
    
 

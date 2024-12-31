@@ -6,7 +6,7 @@
             🔫 Disparar: {{ disparador }}
         </button>
         <ul>
-            <li v-for="(evento, index) in debug" :key="index">
+            <li v-for="(evento, index) in debugSlotv1" :key="index">
                 {{ index }} - {{ evento }}
             </li>
         </ul>
@@ -45,7 +45,7 @@ import {ref, onMounted, onUnmounted, onBeforeUpdate}  from "vue";
 
 //Variables reactivas.
 const disparador= ref("disparar"); 
-const debug = ref([]);
+const debugSlotv1 = ref([]);
 
 //función disparar.
 const disparar = () => {
@@ -54,15 +54,15 @@ const disparar = () => {
 
 //hooks de vida.
 onMounted(() => {
-    debug.value.push("MSG: Slotv1.vue -> 🔥 (onMounted)");
+  debugSlotv1.value.push("MSG: Slotv1.vue -> 🔥 (onMounted)");
 });
 
 onUnmounted(() => {
-    debug.value.push("MSG: Slotv1.vue -> 🔥 (onUnmonunted)");
+  debugSlotv1.value.push("MSG: Slotv1.vue -> 🔥 (onUnmonunted)");
 });
 
 onBeforeUpdate(() => {
-    debug.value.push("MSG: Slotv1.vue -> 🔥 (onBeforeUpdate)");
+  debugSlotv1.value.push("MSG: Slotv1.vue -> 🔥 (onBeforeUpdate)");
 });</script>
 <style scoped>
 .slotv1 {
