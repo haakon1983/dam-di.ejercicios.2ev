@@ -1,12 +1,15 @@
 <template>
   <div id=""app>
-    <EJ02></EJ02>
+    <EJ03></EJ03>
+    
   </div>
   
 </template>
 
 <script setup>
-import EJ02 from './components/EJ02.vue';
+
+import EJ03 from './components/EJ03.vue';
+
 
 
 </script>
