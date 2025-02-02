@@ -7,7 +7,7 @@
       </h1>
       <p class="descripcion-ejercicio">
         <slot name="descripcion">
-          🔶 Ejercicio 01 del modulo-03 usando ROUTER 🔶
+          🔶 Ejercicios del modulo-03 usando ROUTER 🔶
         </slot>
       </p>
     </header>
