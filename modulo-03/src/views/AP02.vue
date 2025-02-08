@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-      <CabeceraEjercicio />
+      
       <h1>AP02: ROUTER</h1>
       <p>Navegación básica</p>
       <p>Usamos la vista con nombre en el router...</p>
@@ -15,13 +15,12 @@
   </template>
   
   <script>
-  import CabeceraEjercicio from '@/components/CabeceraEjercicio.vue'
+ 
   
   export default {
     name: 'AP02',
-    components: {
-      CabeceraEjercicio,
-    },
+    
+  
   }
   </script>
 

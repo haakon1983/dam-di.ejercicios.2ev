@@ -1,12 +1,12 @@
 <template>
     <div class="container">
-      <CabeceraEjercicio />
+      
       <h1>AP01: ROUTER</h1>
       <p>Navegación básica</p>
       <p>Usamos la vista por defecto del router...</p>
       <nav>
-        <router-link to="/AP01/v1" class="link-v1">Vista 1</router-link> |
-        <router-link to="/AP01/v2" class="link-v2">Vista 2</router-link> |
+        <router-link to="/AP02/v1" class="link-v1">Vista 1</router-link> |
+        <router-link to="/AP03/v1" class="link-v2">Vista 2</router-link> |
         <router-link to="/AP01/v3" class="link-v3">Vista 3</router-link> |
         <router-link to="/AP01/v4" class="link-v4">Vista 4</router-link>
       </nav>
@@ -15,12 +15,12 @@
   </template>
   
   <script>
-  import CabeceraEjercicio from '@/components/CabeceraEjercicio.vue'
+ 
   
   export default {
     name: 'AP01',
     components: {
-      CabeceraEjercicio,
+      
     },
   }
   </script>

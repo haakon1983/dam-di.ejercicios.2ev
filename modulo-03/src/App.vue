@@ -1,16 +1,27 @@
 <template>
   <div id="app">
-    
-    <router-view></router-view>
+    <div class="container">
+      <CabeceraEjercicio>
+        MODULO-03: ROUTER 
+       </CabeceraEjercicio>
+      <div class="modulo">
+        </div>
+        <router-view />
+    </div>
   </div>
 </template>
 
 <script>  
+import CabeceraEjercicio from '@/components/CabeceraEjercicio.vue'
 export default {
   name: 'App',
+  components: {
+    CabeceraEjercicio,
+  },
 } 
 
 </script>
+
 
 <style scoped>
 
