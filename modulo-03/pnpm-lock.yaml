@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       pinia:
-        specifier: ^2.2.6
+        specifier: ^2.3.0
         version: 2.3.0(vue@3.5.13)
       vue:
         specifier: ^3.5.13
